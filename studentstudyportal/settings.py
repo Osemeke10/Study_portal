@@ -130,11 +130,18 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS =[BASE_DIR/"static"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-django_heroku.settings(locals())
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS =[BASE_DIR/"static"]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# django_heroku.settings(locals())
+
+TATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 # CRISPY_TEMPLATE_PACK = "bootstap4"
 LOGIN_REDIRECT_URL = 'home'
