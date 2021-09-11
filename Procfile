@@ -1,2 +1,1 @@
-web: gunicorn studentstudyportal.wsgi:application
-jjhhhh
+web: gunicorn studentstudyportal.wsgi --log-file -
